@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="FarmFunny" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/FarmFunny" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/FarmFunny" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/Animals.h" />
+		<Unit filename="include/Cats.h" />
+		<Unit filename="include/Chickens.h" />
+		<Unit filename="include/Dogs.h" />
+		<Unit filename="include/MacDonald.h" />
+		<Unit filename="include/Pigs.h" />
+		<Unit filename="include/ResourceManager.h" />
+		<Unit filename="include/TimeManager.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Animals.cpp" />
+		<Unit filename="src/Cats.cpp" />
+		<Unit filename="src/Chickens.cpp" />
+		<Unit filename="src/Dogs.cpp" />
+		<Unit filename="src/MacDonald.cpp" />
+		<Unit filename="src/Pigs.cpp" />
+		<Unit filename="src/ResourceManager.cpp" />
+		<Unit filename="src/TimeManager.cpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

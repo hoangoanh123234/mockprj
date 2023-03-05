@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1584205420 source:c:\users\dell\desktop\farmfunny\main.cpp
+	<iostream>
+
+1677941553 source:c:\users\dell\desktop\farmfunny\src\cats.cpp
+	"Cats.h"
+
+1677941553 c:\users\dell\desktop\farmfunny\include\cats.h
+
+1677996481 source:c:\users\dell\desktop\farmfunny\src\chickens.cpp
+	"Chickens.h"
+
+1677996481 c:\users\dell\desktop\farmfunny\include\chickens.h
+	<iostream>
+	<Animals.h>
+
+1677941533 source:c:\users\dell\desktop\farmfunny\src\dogs.cpp
+	"Dogs.h"
+
+1677941533 c:\users\dell\desktop\farmfunny\include\dogs.h
+
+1677941606 source:c:\users\dell\desktop\farmfunny\src\macdonald.cpp
+	"MacDonald.h"
+
+1678003899 c:\users\dell\desktop\farmfunny\include\macdonald.h
+	<iostream>
+	<vector>
+	"Animals.h"
+
+1677941562 source:c:\users\dell\desktop\farmfunny\src\pigs.cpp
+	"Pigs.h"
+
+1677941562 c:\users\dell\desktop\farmfunny\include\pigs.h
+
+1678001324 source:c:\users\dell\desktop\farmfunny\src\resourcemanager.cpp
+	"ResourceManager.h"
+
+1678001371 c:\users\dell\desktop\farmfunny\include\resourcemanager.h
+
+1677941618 source:c:\users\dell\desktop\farmfunny\src\timemanager.cpp
+	"TimeManager.h"
+
+1677941618 c:\users\dell\desktop\farmfunny\include\timemanager.h
+
+1678001233 source:c:\users\dell\desktop\farmfunny\src\animals.cpp
+	"Animals.h"
+
+1678003899 c:\users\dell\desktop\farmfunny\include\animals.h
+	<iostream>
+
