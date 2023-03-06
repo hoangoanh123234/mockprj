@@ -7,6 +7,8 @@ Animals::Animals()
     happyindex = nullptr;
     price_sell = 0;
     sound = "";
+    //truyen thoi gian
+    lifetime = 0;
 }
 Animals::~Animals()
 {
@@ -53,7 +55,14 @@ int *Animals::getHappyIndex()
 {
     return happyindex;
 }
-
+int Animals::getLifeTime()
+{
+    return lifetime;
+}
+void Animals::setLifeTime(int lifetime)
+{
+    this->lifetime = lifetime;
+}
 int Animals::getType()
 {
     return type;

@@ -1,7 +1,8 @@
 #ifndef RESOURCEMANAGER_H
 #define RESOURCEMANAGER_H
-
-
+#include <iostream>
+#include <vector>
+#include "Animals.h"
 class ResourceManager
 {
     public:
@@ -14,6 +15,7 @@ class ResourceManager
     protected:
 
     private:
+        vector<Animals*> animals;
         int food;
         int money;
 };

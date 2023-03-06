@@ -10,7 +10,8 @@ class Chickens: public Animals {
         virtual ~Chickens();
         void setWeight(float weight1);
         void weigh();
-
+        bool sell();
+        bool isLifeTime();
     protected:
 
     private:

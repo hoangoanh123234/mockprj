@@ -48,13 +48,14 @@
 1678003899 c:\users\dell\desktop\farmfunny\include\animals.h
 	<iostream>
 
-1584205420 source:c:\users\dell\desktop\mockprj\farmfunny\main.cpp
+1678123453 source:c:\users\dell\desktop\mockprj\farmfunny\main.cpp
 	<iostream>
+	"StringUtility.h"
 
-1678003899 source:c:\users\dell\desktop\mockprj\farmfunny\src\animals.cpp
+1678119777 source:c:\users\dell\desktop\mockprj\farmfunny\src\animals.cpp
 	"Animals.h"
 
-1678116227 c:\users\dell\desktop\mockprj\farmfunny\include\animals.h
+1678120615 c:\users\dell\desktop\mockprj\farmfunny\include\animals.h
 	<iostream>
 
 1677941553 source:c:\users\dell\desktop\mockprj\farmfunny\src\cats.cpp
@@ -62,17 +63,17 @@
 
 1677941553 c:\users\dell\desktop\mockprj\farmfunny\include\cats.h
 
-1677996481 source:c:\users\dell\desktop\mockprj\farmfunny\src\chickens.cpp
+1678119777 source:c:\users\dell\desktop\mockprj\farmfunny\src\chickens.cpp
 	"Chickens.h"
 
-1677996481 c:\users\dell\desktop\mockprj\farmfunny\include\chickens.h
+1678119777 c:\users\dell\desktop\mockprj\farmfunny\include\chickens.h
 	<iostream>
 	<Animals.h>
 
-1678116227 source:c:\users\dell\desktop\mockprj\farmfunny\src\dogs.cpp
+1678117485 source:c:\users\dell\desktop\mockprj\farmfunny\src\dogs.cpp
 	"Dogs.h"
 
-1678116227 c:\users\dell\desktop\mockprj\farmfunny\include\dogs.h
+1678117525 c:\users\dell\desktop\mockprj\farmfunny\include\dogs.h
 
 1677941562 source:c:\users\dell\desktop\mockprj\farmfunny\src\pigs.cpp
 	"Pigs.h"
@@ -82,10 +83,30 @@
 1678001324 source:c:\users\dell\desktop\mockprj\farmfunny\src\resourcemanager.cpp
 	"ResourceManager.h"
 
-1678001371 c:\users\dell\desktop\mockprj\farmfunny\include\resourcemanager.h
+1678120615 c:\users\dell\desktop\mockprj\farmfunny\include\resourcemanager.h
+	<iostream>
+	<vector>
+	"Animals.h"
 
 1677941618 source:c:\users\dell\desktop\mockprj\farmfunny\src\timemanager.cpp
 	"TimeManager.h"
 
 1677941618 c:\users\dell\desktop\mockprj\farmfunny\include\timemanager.h
+
+1678123453 source:c:\users\dell\desktop\mockprj\farmfunny\src\macdonald.cpp
+	"MacDonald.h"
+	<string.h>
+	<cstring>
+
+1678121827 c:\users\dell\desktop\mockprj\farmfunny\include\macdonald.h
+	<iostream>
+	<vector>
+	"Animals.h"
+	"ResourceManager.h"
+
+1678123796 c:\users\dell\desktop\mockprj\farmfunny\include\stringutility.h
+	<iostream>
+
+1678123715 source:c:\users\dell\desktop\mockprj\farmfunny\src\stringutility.cpp
+	"StringUtility.h"
 

@@ -9,6 +9,7 @@ class Animals
         static const int TYPE_CAT = 2;
         static const int TYPE_DOG = 3;
         static const int TYPE_PIG = 4;
+
         Animals();
         virtual ~Animals();
         void nhap();
@@ -16,20 +17,25 @@ class Animals
         void setName(string name);
         int getAge();
         float getWeight();
-        string getSound();
         virtual void setWeight(float weight);
+        string getSound();
+        void setSound(string sound);
+        int getLifeTime();
+        void setLifeTime(int lifetime);
         int getType();
         void setType(int type);
         int *getHappyIndex();
         void setHappyIndex(int hpi);
-        void setSound(string sound);
-        virtual void sell() = 0;
+
+        virtual bool sell() = 0;
+        virtual bool isLifeTime() = 0;
         virtual void action_sound() = 0;
         virtual void eat() = 0;
         virtual void reproduce() = 0;
         virtual void go_out() = 0;
         virtual void die() = 0;
         virtual void weigh() = 0;
+
     protected:
 
     private:
@@ -40,6 +46,7 @@ class Animals
         int price_sell;
         string sound;
         int type;
+        int lifetime;
 };
 
 #endif // ANIMALS_H
