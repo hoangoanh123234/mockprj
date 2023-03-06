@@ -1,8 +1,10 @@
 #ifndef MACDONALD_H
 #define MACDONALD_H
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 #include "Animals.h"
+#include "ResourceManager.h"
+using namespace std;
 class MacDonald
 {
     public:
@@ -19,6 +21,7 @@ class MacDonald
 
     private:
         vector<Animals*> animals;
+        ResourceManager *resource;
         void feed_all();
         void feed_type(int type);
         void feed_name(string animal_name);

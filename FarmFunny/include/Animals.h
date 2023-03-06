@@ -40,6 +40,7 @@ class Animals
         int price_sell;
         string sound;
         int type;
+        int
 };
 
 #endif // ANIMALS_H
