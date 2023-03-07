@@ -8,6 +8,7 @@ class StringUtility
         StringUtility();
         virtual ~StringUtility();
         static string split(string str, string delimiter);
+        static int random(int minN, int maxN);
         /*static int a = 0;
         int b = 0;*/
     protected:

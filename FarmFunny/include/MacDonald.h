@@ -18,6 +18,7 @@ class MacDonald
         void buyFood();
         void reportAnimals();
         void resourceStatus();
+        void reportAll();
     protected:
 
     private:

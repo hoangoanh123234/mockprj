@@ -110,3 +110,138 @@
 1678123715 source:c:\users\dell\desktop\mockprj\farmfunny\src\stringutility.cpp
 	"StringUtility.h"
 
+1678157049 source:c:\users\oanh2.nguyen\desktop\new folder\mockprj\farmfunny\main.cpp
+	<iostream>
+	"StringUtility.h"
+
+1678157049 c:\users\oanh2.nguyen\desktop\new folder\mockprj\farmfunny\include\stringutility.h
+	<iostream>
+
+1678157049 source:c:\users\oanh2.nguyen\desktop\new folder\mockprj\farmfunny\src\animals.cpp
+	"Animals.h"
+
+1678157049 c:\users\oanh2.nguyen\desktop\new folder\mockprj\farmfunny\include\animals.h
+	<iostream>
+
+1678072816 source:c:\users\oanh2.nguyen\desktop\new folder\mockprj\farmfunny\src\cats.cpp
+	"Cats.h"
+
+1678072816 c:\users\oanh2.nguyen\desktop\new folder\mockprj\farmfunny\include\cats.h
+
+1678157049 source:c:\users\oanh2.nguyen\desktop\new folder\mockprj\farmfunny\src\chickens.cpp
+	"Chickens.h"
+
+1678157049 c:\users\oanh2.nguyen\desktop\new folder\mockprj\farmfunny\include\chickens.h
+	<iostream>
+	<Animals.h>
+
+1678157049 source:c:\users\oanh2.nguyen\desktop\new folder\mockprj\farmfunny\src\dogs.cpp
+	"Dogs.h"
+
+1678091195 c:\users\oanh2.nguyen\desktop\new folder\mockprj\farmfunny\include\dogs.h
+
+1678157049 source:c:\users\oanh2.nguyen\desktop\new folder\mockprj\farmfunny\src\macdonald.cpp
+	"MacDonald.h"
+	<string.h>
+	<cstring>
+
+1678157049 c:\users\oanh2.nguyen\desktop\new folder\mockprj\farmfunny\include\macdonald.h
+	<iostream>
+	<vector>
+	"Animals.h"
+	"ResourceManager.h"
+
+1678157049 c:\users\oanh2.nguyen\desktop\new folder\mockprj\farmfunny\include\resourcemanager.h
+	<iostream>
+	<vector>
+	"Animals.h"
+
+1678072816 source:c:\users\oanh2.nguyen\desktop\new folder\mockprj\farmfunny\src\pigs.cpp
+	"Pigs.h"
+
+1678072816 c:\users\oanh2.nguyen\desktop\new folder\mockprj\farmfunny\include\pigs.h
+
+1678072816 source:c:\users\oanh2.nguyen\desktop\new folder\mockprj\farmfunny\src\resourcemanager.cpp
+	"ResourceManager.h"
+
+1678157049 source:c:\users\oanh2.nguyen\desktop\new folder\mockprj\farmfunny\src\stringutility.cpp
+	"StringUtility.h"
+
+1678072816 source:c:\users\oanh2.nguyen\desktop\new folder\mockprj\farmfunny\src\timemanager.cpp
+	"TimeManager.h"
+
+1678072816 c:\users\oanh2.nguyen\desktop\new folder\mockprj\farmfunny\include\timemanager.h
+
+1678182424 source:d:\private\mockprj\farmfunny\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"StringUtility.h"
+
+1678182404 d:\private\mockprj\farmfunny\include\stringutility.h
+	<iostream>
+
+1678157049 source:d:\private\mockprj\farmfunny\src\animals.cpp
+	"Animals.h"
+
+1678182139 d:\private\mockprj\farmfunny\include\animals.h
+	<iostream>
+
+1678182096 source:d:\private\mockprj\farmfunny\src\cats.cpp
+	"Cats.h"
+	"Animals.h"
+
+1678180459 d:\private\mockprj\farmfunny\include\cats.h
+	"Animals.h"
+	<iostream>
+
+1678180351 source:d:\private\mockprj\farmfunny\src\chickens.cpp
+	"Chickens.h"
+
+1678180351 d:\private\mockprj\farmfunny\include\chickens.h
+	<iostream>
+	<Animals.h>
+
+1678182096 source:d:\private\mockprj\farmfunny\src\dogs.cpp
+	"Dogs.h"
+
+1678182096 d:\private\mockprj\farmfunny\include\dogs.h
+	"Animals.h"
+	<iostream>
+
+1678175648 source:d:\private\mockprj\farmfunny\src\macdonald.cpp
+	"MacDonald.h"
+	<string.h>
+	<cstring>
+
+1678180351 d:\private\mockprj\farmfunny\include\macdonald.h
+	<iostream>
+	<vector>
+	"Animals.h"
+	"ResourceManager.h"
+
+1678157049 d:\private\mockprj\farmfunny\include\resourcemanager.h
+	<iostream>
+	<vector>
+	"Animals.h"
+
+1678182404 source:d:\private\mockprj\farmfunny\src\pigs.cpp
+	"Pigs.h"
+
+1678182404 d:\private\mockprj\farmfunny\include\pigs.h
+	"Animals.h"
+	"StringUtility.h"
+	<iostream>
+
+1678072816 source:d:\private\mockprj\farmfunny\src\resourcemanager.cpp
+	"ResourceManager.h"
+
+1678182448 source:d:\private\mockprj\farmfunny\src\stringutility.cpp
+	"StringUtility.h"
+
+1678072816 source:d:\private\mockprj\farmfunny\src\timemanager.cpp
+	"TimeManager.h"
+
+1678072816 d:\private\mockprj\farmfunny\include\timemanager.h
+

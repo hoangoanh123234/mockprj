@@ -13,14 +13,17 @@ MacDonald::~MacDonald()
 void MacDonald::feed(string command)
 {
     //command dạng feed ...
-   string cmd = command.substr(5,command.length()-1);
+    string cmd = command.substr(5,command.length()-1);
     if (cmd.compare("animals")) MacDonald::feedAll();
+    else if (cmd.compare("chickens")) MacDonald::feedType(1);
+    else if (cmd.compare("cats")) MacDonald::feedType(2);
+    else if (cmd.compare("dogs")) MacDonald::feedType(3);
+    else if (cmd.compare("pigs")) MacDonald::feedType(4);
     else
-        if (cmd.compare("chickens")) MacDonald::feedType(1);
-        else
-        {
-            MacDonald::feedName(cmd);
-        }
+    {
+        //check xem ten con vat co trong danh sach ko, neu co moi cho an, khong thi thong bao
+        MacDonald::feedName(cmd);
+    }
 }
 void MacDonald::sellAnimal(string command)
 {
@@ -28,9 +31,9 @@ void MacDonald::sellAnimal(string command)
     string cmd;
     if (cmd.compare("chickens")) MacDonald::sellType(1);
     else
-       {
-           //
-       }
+    {
+        //
+    }
 }
 void MacDonald::sellType(int type)
 {

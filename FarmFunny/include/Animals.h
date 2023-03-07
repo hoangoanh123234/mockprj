@@ -31,7 +31,7 @@ class Animals
         virtual bool isLifeTime() = 0;
         virtual void action_sound() = 0;
         virtual void eat() = 0;
-        virtual void reproduce() = 0;
+        virtual int reproduce() = 0;
         virtual void go_out() = 0;
         virtual void die() = 0;
         virtual void weigh() = 0;

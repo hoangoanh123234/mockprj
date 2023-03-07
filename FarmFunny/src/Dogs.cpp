@@ -2,7 +2,9 @@
 
 Dogs::Dogs()
 {
-    smart_index = 0;
+    smartIndex = 0;
+    Animals::setHappyIndex(HAPPYINDEX_DEFAULT);
+    Animals::setSound("Woof!");
 }
 
 Dogs::~Dogs()
@@ -11,9 +13,17 @@ Dogs::~Dogs()
 }
 int Dogs::getSmartIndex()
 {
-    return smart_index;
+    return smartIndex;
 }
-void Dogs::setSmartIndex(int smart_index)
+void Dogs::setSmartIndex(int smartIndex)
 {
-    this->smart_index = smart_index;
+    this->smartIndex = smartIndex;
+}
+void Dogs::setWeight(float weight1)
+{
+   Animals::setWeight(min(MAX_WEIGHT,weight1));
+}
+bool Dogs::fullWeight()
+{
+    return (Dogs::getWeight() == 7);
 }

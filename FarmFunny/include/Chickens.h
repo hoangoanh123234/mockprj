@@ -1,7 +1,8 @@
 #ifndef CHICKENS_H
 #define CHICKENS_H
 #include<iostream>
-#include<Animals.h>
+#include "Animals.h"
+#include "StringUtility.h"
 using namespace std;
 
 class Chickens: public Animals {
@@ -10,8 +11,9 @@ class Chickens: public Animals {
         virtual ~Chickens();
         void setWeight(float weight1);
         void weigh();
-        bool sell();
+        bool fullWeight();
         bool isLifeTime();
+        int reproduce();
     protected:
 
     private:
