@@ -35,8 +35,7 @@ int Chickens::checkName()
 {
     return 1;
 }
-void Chickens::reproduce()
-{
+void Chickens::reproduce() //sai luong, class resource, tra ve vector (chua con tro)chua cac con con kieu chicken
     system("cls");
     fflush(stdin);
     for (int i = 1; i <= Chickens::isReproduce(); i++)
@@ -49,8 +48,10 @@ void Chickens::reproduce()
                 cout<<"Name is exist";
         }
         while(Chickens::checkName() < 1);
+        //
         MacDonald::resource->animals.push_back(smallChicken);
         MacDonald::resource->animals.clear();
         //Menu(); da co lenh goi menu trong phan menu sau switch case
     }
 }
+//mot phuong thuc void ... (int n = 1), du tieng keu thi set lai = 0, giam happy index, check dk cong len qua 10

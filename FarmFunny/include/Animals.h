@@ -36,6 +36,7 @@ class Animals
         virtual void go_out() = 0;
         virtual void die() = 0;
         virtual void weigh() = 0;
+        virtual bool isEat() = 0;
 
     protected:
 
@@ -46,7 +47,7 @@ class Animals
         int *happyindex;
         int price_sell;
         string sound;
-        int type;
+        int type; //cat type tu lenh buy
         int lifetime;
 };
 

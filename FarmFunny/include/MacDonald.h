@@ -26,7 +26,6 @@ class MacDonald
     protected:
 
     private:
-
         void feedAll();
         void feedType(int type);
         void feedName(string animalName,int orderNumber);
