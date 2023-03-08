@@ -182,10 +182,10 @@
 1678182404 d:\private\mockprj\farmfunny\include\stringutility.h
 	<iostream>
 
-1678157049 source:d:\private\mockprj\farmfunny\src\animals.cpp
+1678264264 source:d:\private\mockprj\farmfunny\src\animals.cpp
 	"Animals.h"
 
-1678182139 d:\private\mockprj\farmfunny\include\animals.h
+1678264618 d:\private\mockprj\farmfunny\include\animals.h
 	<iostream>
 
 1678182096 source:d:\private\mockprj\farmfunny\src\cats.cpp
@@ -196,12 +196,13 @@
 	"Animals.h"
 	<iostream>
 
-1678180351 source:d:\private\mockprj\farmfunny\src\chickens.cpp
+1678184201 source:d:\private\mockprj\farmfunny\src\chickens.cpp
 	"Chickens.h"
 
-1678180351 d:\private\mockprj\farmfunny\include\chickens.h
+1678184201 d:\private\mockprj\farmfunny\include\chickens.h
 	<iostream>
-	<Animals.h>
+	"Animals.h"
+	"StringUtility.h"
 
 1678182096 source:d:\private\mockprj\farmfunny\src\dogs.cpp
 	"Dogs.h"
@@ -210,26 +211,27 @@
 	"Animals.h"
 	<iostream>
 
-1678175648 source:d:\private\mockprj\farmfunny\src\macdonald.cpp
+1678270667 source:d:\private\mockprj\farmfunny\src\macdonald.cpp
 	"MacDonald.h"
 	<string.h>
 	<cstring>
 
-1678180351 d:\private\mockprj\farmfunny\include\macdonald.h
+1678270855 d:\private\mockprj\farmfunny\include\macdonald.h
 	<iostream>
 	<vector>
 	"Animals.h"
 	"ResourceManager.h"
+	"StringUtility.h"
 
-1678157049 d:\private\mockprj\farmfunny\include\resourcemanager.h
+1678246493 d:\private\mockprj\farmfunny\include\resourcemanager.h
 	<iostream>
 	<vector>
 	"Animals.h"
 
-1678182404 source:d:\private\mockprj\farmfunny\src\pigs.cpp
+1678264638 source:d:\private\mockprj\farmfunny\src\pigs.cpp
 	"Pigs.h"
 
-1678182404 d:\private\mockprj\farmfunny\include\pigs.h
+1678264631 d:\private\mockprj\farmfunny\include\pigs.h
 	"Animals.h"
 	"StringUtility.h"
 	<iostream>
@@ -237,7 +239,7 @@
 1678072816 source:d:\private\mockprj\farmfunny\src\resourcemanager.cpp
 	"ResourceManager.h"
 
-1678182448 source:d:\private\mockprj\farmfunny\src\stringutility.cpp
+1678246493 source:d:\private\mockprj\farmfunny\src\stringutility.cpp
 	"StringUtility.h"
 
 1678072816 source:d:\private\mockprj\farmfunny\src\timemanager.cpp

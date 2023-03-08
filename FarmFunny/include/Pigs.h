@@ -12,7 +12,7 @@ class Pigs:public Animals
         virtual ~Pigs();
         void setWeight(float weight1);
         bool fullWeight();
-        int reproduce();
+        int isReproduce();
 
     protected:
 

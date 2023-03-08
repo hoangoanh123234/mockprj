@@ -10,37 +10,73 @@ MacDonald::~MacDonald()
     //dtor
 }
 
+bool MacDonald::checkName(string animalName)
+{
+     for(int i=0;i<resource->animals.size();i++)
+    {
+        if(animalName.compare(resource->animals[i]->getName()) == 0);
+            return i;
+    }
+    return -1;
+}
 void MacDonald::feed(string command)
 {
     //command dạng feed ...
-    string cmd = command.substr(5,command.length()-1);
-    if (cmd.compare("animals")) MacDonald::feedAll();
-    else if (cmd.compare("chickens")) MacDonald::feedType(1);
-    else if (cmd.compare("cats")) MacDonald::feedType(2);
-    else if (cmd.compare("dogs")) MacDonald::feedType(3);
-    else if (cmd.compare("pigs")) MacDonald::feedType(4);
-    else
+    string cmd = StringUtility::split(command," ");
+    if (cmd.compare("animals") == 0) MacDonald::feedAll();
+    else if (cmd.compare("chickens") == 0) MacDonald::feedType(1);
+    else if (cmd.compare("cats") == 0) MacDonald::feedType(2);
+    else if (cmd.compare("dogs") == 0) MacDonald::feedType(3);
+    else if (cmd.compare("pigs") == 0) MacDonald::feedType(4);
+    else if (MacDonald::checkName(cmd) >= 0)
     {
-        //check xem ten con vat co trong danh sach ko, neu co moi cho an, khong thi thong bao
-        MacDonald::feedName(cmd);
+        int i = MacDonald::checkName(cmd);
+        MacDonald::feedName(cmd,i); //check xem ten con vat co trong danh sach ko, neu co moi cho an, khong thi thong bao
     }
+
+    else cout << "There is no type or name of this animal!!!";
+    //system ("pause");
 }
 void MacDonald::sellAnimal(string command)
 {
     //command dạng feed ...
-    string cmd;
+    string cmd = StringUtility::split(command," ");
     if (cmd.compare("chickens")) MacDonald::sellType(1);
-    else
+    else if (cmd.compare("cats")) MacDonald::sellType(2);
+    else if (cmd.compare("dogs")) MacDonald::sellType(3);
+    else if (cmd.compare("pigs")) MacDonald::sellType(4);
+    else if (MacDonald::checkName(cmd) >= 0)
     {
-        //
+        int i = MacDonald::checkName(cmd);
+        MacDonald::sellName(cmd,i);  //check xem ten con vat co trong danh sach ko, neu co moi ban, khong thi thong bao
     }
+    else cout << "There is no type or name of this animal!!!";
+    //system ("pause");
 }
 void MacDonald::sellType(int type)
 {
-
+    if (type = 1)
+    {
+            resource->setMoney(resource->getMoney()+2);
+    }
+    else
+        if (type = 2)
+        {
+            resource->setMoney(resource->getMoney()+4);
+        }
+        else
+            if (type = 3)
+            {
+                 //if (smartIndex==10) resource->setMoney(resource->getMoney()+10);
+                  resource->setMoney(resource->getMoney()+5);
+            }
+            else
+            {
+                //resource->setMoney(resource->getMoney()+4);
+            }
 }
 
-void MacDonald::sellName(string animalName)
+void MacDonald::sellName(string animalName,int numberOrder)
 {
 
 }
@@ -56,7 +92,11 @@ void MacDonald::feedType(int type)
 
 }
 
-void MacDonald::feedName(string animalName)
+ResourceManager* MacDonald::getResource()
+{
+    return resource;
+}
+void MacDonald::feedName(string animalName,int numberOrder)
 {
 
 }

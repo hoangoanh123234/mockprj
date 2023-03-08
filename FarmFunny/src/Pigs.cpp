@@ -17,7 +17,7 @@ bool Pigs::fullWeight()
 {
     return (Pigs::getWeight() == 10);
 }
-int Pigs::reproduce()
+int Pigs::isReproduce()
 {
     return StringUtility::random(1,2);
 

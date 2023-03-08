@@ -6,6 +6,7 @@
 class ResourceManager
 {
     public:
+        vector<Animals*> animals;
         ResourceManager();
         virtual ~ResourceManager();
         int getFood ();
@@ -15,7 +16,7 @@ class ResourceManager
     protected:
 
     private:
-        vector<Animals*> animals;
+
         int food;
         int money;
 };

@@ -3,6 +3,8 @@
 #include<iostream>
 #include "Animals.h"
 #include "StringUtility.h"
+#include "MacDonald.h"
+
 using namespace std;
 
 class Chickens: public Animals {
@@ -13,7 +15,9 @@ class Chickens: public Animals {
         void weigh();
         bool fullWeight();
         bool isLifeTime();
-        int reproduce();
+        int checkName();
+        int isReproduce();
+        void reproduce();
     protected:
 
     private:

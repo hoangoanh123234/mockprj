@@ -14,7 +14,7 @@ Animals::~Animals()
 {
     //dtor
 }
-void Animals::nhap()
+void Animals::input()
 {
     cout << "Name: ";
     getline(cin,name);
