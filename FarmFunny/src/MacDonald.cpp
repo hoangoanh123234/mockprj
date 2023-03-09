@@ -1,24 +1,17 @@
 #include "MacDonald.h"
 #include <string.h>
 #include <cstring>
+
 MacDonald::MacDonald()
 {
-    // resource = new ResourceManager();
+    resource = new ResourceManager();
 }
 MacDonald::~MacDonald()
 {
     //dtor
 }
 
-bool MacDonald::checkName(string animalName)
-{
-     for(int i=0;i<resource->animals.size();i++)
-    {
-        if(animalName.compare(resource->animals[i]->getName()) == 0);
-            return i;
-    }
-    return -1;
-}
+
 void MacDonald::feed(string command)
 {
     //command dạng feed ...
@@ -28,9 +21,9 @@ void MacDonald::feed(string command)
     else if (cmd.compare("cats") == 0) MacDonald::feedType(2);
     else if (cmd.compare("dogs") == 0) MacDonald::feedType(3);
     else if (cmd.compare("pigs") == 0) MacDonald::feedType(4);
-    else if (MacDonald::checkName(cmd) >= 0)
+    else if (MacDonald::resource->checkName(cmd) >= 0)
     {
-        int i = MacDonald::checkName(cmd);
+        int i = MacDonald::resource->checkName(cmd);
         MacDonald::feedName(cmd,i); //check xem ten con vat co trong danh sach ko, neu co moi cho an, khong thi thong bao
     }
 
@@ -45,9 +38,9 @@ void MacDonald::sellAnimal(string command)
     else if (cmd.compare("cats")) MacDonald::sellType(2);
     else if (cmd.compare("dogs")) MacDonald::sellType(3);
     else if (cmd.compare("pigs")) MacDonald::sellType(4);
-    else if (MacDonald::checkName(cmd) >= 0)
+    else if (MacDonald::resource->checkName(cmd) >= 0)
     {
-        int i = MacDonald::checkName(cmd);
+        int i = MacDonald::resource->checkName(cmd);
         MacDonald::sellName(cmd,i);  //check xem ten con vat co trong danh sach ko, neu co moi ban, khong thi thong bao
     }
     else cout << "There is no type or name of this animal!!!";
@@ -92,10 +85,6 @@ void MacDonald::feedType(int type)
 
 }
 
-ResourceManager* MacDonald::getResource()
-{
-    return resource;
-}
 void MacDonald::feedName(string animalName,int numberOrder)
 {
 

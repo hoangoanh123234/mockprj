@@ -22,3 +22,27 @@ int Pigs::isReproduce()
     return StringUtility::random(1,2);
 
 }
+bool Pigs::sell()
+{
+
+}
+
+void Pigs::eat()
+{
+
+}
+
+void Pigs::go_out()
+{
+
+}
+
+void Pigs::die()
+{
+
+}
+
+bool Pigs::isEat()
+{
+
+}

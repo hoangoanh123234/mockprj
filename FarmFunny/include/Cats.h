@@ -7,10 +7,17 @@ using namespace std;
 class Cats:public Animals
 {
     public:
+
         Cats();
         virtual ~Cats();
         void setWeight(float weight1);
         bool fullWeight();
+        int isReproduce();
+        bool sell();
+        void eat();
+        void go_out();
+        void die();
+        bool isEat();
 
     protected:
 

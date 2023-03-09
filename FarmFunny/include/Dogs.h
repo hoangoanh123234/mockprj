@@ -7,13 +7,19 @@ using namespace std;
 class Dogs:public Animals
 {
     public:
+
         Dogs();
         virtual ~Dogs();
         int getSmartIndex();
         void setSmartIndex(int smartIndex);
         void setWeight(float weight1);
         bool fullWeight();
-
+        int isReproduce();
+        bool sell();
+        void eat();
+        void go_out();
+        void die();
+        bool isEat();
     protected:
 
     private:

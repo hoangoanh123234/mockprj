@@ -27,3 +27,32 @@ bool Dogs::fullWeight()
 {
     return (Dogs::getWeight() == 7);
 }
+int Dogs::isReproduce()
+{
+    return 1;
+}
+bool Dogs::sell()
+{
+
+}
+
+void Dogs::eat()
+{
+
+}
+
+void Dogs::go_out()
+{
+
+}
+
+void Dogs::die()
+{
+
+}
+
+bool Dogs::isEat()
+{
+
+}
+

@@ -8,11 +8,17 @@ using namespace std;
 class Pigs:public Animals
 {
     public:
+
         Pigs();
         virtual ~Pigs();
         void setWeight(float weight1);
         bool fullWeight();
         int isReproduce();
+        bool sell();
+        void eat();
+        void go_out();
+        void die();
+        bool isEat();
 
     protected:
 

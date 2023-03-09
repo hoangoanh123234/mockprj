@@ -2,17 +2,15 @@
 #define MACDONALD_H
 #include <iostream>
 #include <vector>
-#include "Animals.h"
 #include "ResourceManager.h"
 #include "StringUtility.h"
+
 using namespace std;
 class MacDonald
 {
     public:
-        ResourceManager *resource;
         MacDonald();
         virtual ~MacDonald();
-        ResourceManager *getResource();
         void feed(string command);
         void letAnimalOut();
         void letAnimalBack();
@@ -22,7 +20,7 @@ class MacDonald
         void reportAnimals();
         void resourceStatus();
         void reportAll();
-        bool checkName(string animalName);
+        ResourceManager *resource;
     protected:
 
     private:

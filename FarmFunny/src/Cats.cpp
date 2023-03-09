@@ -1,5 +1,5 @@
 #include "Cats.h"
-#include "Animals.h"
+
 Cats::Cats()
 {
     Animals::setHappyIndex(HAPPYINDEX_DEFAULT);
@@ -18,3 +18,32 @@ bool Cats::fullWeight()
 {
     return (Cats::getWeight() == 4);
 }
+bool Cats::sell()
+{
+
+}
+
+void Cats::eat()
+{
+
+}
+
+void Cats::go_out()
+{
+
+}
+
+void Cats::die()
+{
+
+}
+
+bool Cats::isEat()
+{
+
+}
+int Cats::isReproduce()
+{
+    return 1;
+}
+

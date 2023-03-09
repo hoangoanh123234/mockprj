@@ -3,21 +3,25 @@
 #include<iostream>
 #include "Animals.h"
 #include "StringUtility.h"
-#include "MacDonald.h"
 
 using namespace std;
 
 class Chickens: public Animals {
     public:
+
         Chickens();
         virtual ~Chickens();
         void setWeight(float weight1);
         void weigh();
         bool fullWeight();
         bool isLifeTime();
-        int checkName();
         int isReproduce();
-        void reproduce();
+
+        bool sell();
+        void eat();
+        void go_out();
+        void die();
+        bool isEat();
     protected:
 
     private:
