@@ -194,3 +194,7 @@ void ResourceManager::actionSoundDog(int quantity)
     }
 }
 //mot phuong thuc void ... (int n = 1), du tieng keu thi set lai = 0, giam happy index, check dk cong len qua 10
+//chuyen qua tung thang ben animals, check ham goOut , int isSounding
+//price la cua resource
+//tach gia ra khoi resource -> class shop
+//duyet unit truoc khi cho an
