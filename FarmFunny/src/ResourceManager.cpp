@@ -1,12 +1,11 @@
 #include "ResourceManager.h"
-
+int ResourceManager::soundForCat = 0;
+int ResourceManager::soundForChicken = 0;
+int ResourceManager::soundForDog = 0;
 ResourceManager::ResourceManager()
 {
     this->food = 50;
     this->money = 20;
-    soundForCat = 0;
-    soundForChicken = 0;
-    soundForDog = 0;
 }
 
 ResourceManager::~ResourceManager()
