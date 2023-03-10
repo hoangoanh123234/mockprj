@@ -3,7 +3,6 @@
 Cats::Cats()
 {
     Animals::setHappyIndex(HAPPYINDEX_DEFAULT);
-    Animals::setSound("Meow!");
 }
 
 Cats::~Cats()
@@ -24,11 +23,6 @@ bool Cats::sell()
 }
 
 void Cats::eat()
-{
-
-}
-
-void Cats::go_out()
 {
 
 }

@@ -11,15 +11,9 @@ using namespace std;
 class ResourceManager
 {
     public:
-        static int soundForChicken;
-        static int soundForCat;
-        static int soundForDog;
         vector<Animals*> animals;
         ResourceManager();
         virtual ~ResourceManager();
-        void actionSoundChicken(int quantity);
-        void actionSoundCat(int quantity);
-        void actionSoundDog(int quantity);
 
         int getFood ();
         void setFood (int food);
@@ -30,7 +24,15 @@ class ResourceManager
         vector<Animals*> reproduceDog(int index);
         vector<Animals*> reproducePig(int index);
         bool checkName(string animalName);
-
+        void chickenSound(int quantity = 1);
+        void catSound(int quantity = 1);
+        void dogSound(int quantity = 1);
+        void pigSound(int quantity = 1);
+        bool fullFood();
+        bool foodCat();
+        bool foodChicken();
+        bool foodDog();
+        bool foodPig();
 
     protected:
 

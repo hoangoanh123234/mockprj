@@ -4,7 +4,6 @@ Dogs::Dogs()
 {
     smartIndex = 0;
     Animals::setHappyIndex(HAPPYINDEX_DEFAULT);
-    Animals::setSound("Woof!");
 }
 
 Dogs::~Dogs()
@@ -37,11 +36,6 @@ bool Dogs::sell()
 }
 
 void Dogs::eat()
-{
-
-}
-
-void Dogs::go_out()
 {
 
 }

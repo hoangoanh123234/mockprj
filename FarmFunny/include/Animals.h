@@ -18,23 +18,26 @@ class Animals
         int getAge();
         float getWeight();
         virtual void setWeight(float weight);
-        string getSound();
-        void setSound(string sound);
         int getLifeTime();
         void setLifeTime(int lifetime);
         int getType();
         void setType(int type);
         int *getHappyIndex();
         void setHappyIndex(int hpi);
+        int getIsHeard();
+        void setIsHeard(int isHeard);
+        bool getIsGoOut();
+        void setIsGoOut(bool isGoOut);
+        bool getIsEat();
+        void setIsEat(bool isEat);
 
         virtual bool sell() = 0;
         virtual bool isLifeTime() = 0;
         virtual void eat() = 0;
         virtual int isReproduce() = 0;
-        virtual void go_out() = 0;
         virtual void die() = 0;
         virtual void weigh() = 0;
-        virtual bool isEat() = 0;
+
 
     protected:
 
@@ -44,9 +47,11 @@ class Animals
         float weight;
         int *happyindex;
         int price_sell;
-        string sound;
         int type; //cat type tu lenh buy
         int lifetime;
+        int isHeard;
+        bool isGoOut;
+        bool isEat;
 };
 
 #endif // ANIMALS_H

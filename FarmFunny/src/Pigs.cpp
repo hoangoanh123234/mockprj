@@ -2,7 +2,7 @@
 
 Pigs::Pigs()
 {
-    Animals::setSound("Oink!");
+
 }
 
 Pigs::~Pigs()
@@ -28,11 +28,6 @@ bool Pigs::sell()
 }
 
 void Pigs::eat()
-{
-
-}
-
-void Pigs::go_out()
 {
 
 }

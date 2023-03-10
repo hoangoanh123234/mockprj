@@ -27,7 +27,7 @@ void MacDonald::feed(string command)
         MacDonald::feedName(cmd,i); //check xem ten con vat co trong danh sach ko, neu co moi cho an, khong thi thong bao
     }
 
-    else cout << "There is no type or name of this animal!!!";
+    else cout << cmd <<".There is no type or name of this animal!!!";
     //system ("pause");
 }
 void MacDonald::sellAnimal(string command)
@@ -50,30 +50,27 @@ void MacDonald::sellType(int type)
 {
     if (type = 1)
     {
-            resource->setMoney(resource->getMoney()+2);
+        resource->setMoney(resource->getMoney()+2);
+    }
+    else if (type = 2)
+    {
+        resource->setMoney(resource->getMoney()+4);
+    }
+    else if (type = 3)
+    {
+        //if (smartIndex==10) resource->setMoney(resource->getMoney()+10);
+        resource->setMoney(resource->getMoney()+5);
     }
     else
-        if (type = 2)
-        {
-            resource->setMoney(resource->getMoney()+4);
-        }
-        else
-            if (type = 3)
-            {
-                 //if (smartIndex==10) resource->setMoney(resource->getMoney()+10);
-                  resource->setMoney(resource->getMoney()+5);
-            }
-            else
-            {
-                //resource->setMoney(resource->getMoney()+4);
-            }
+    {
+        //resource->setMoney(resource->getMoney()+4);
+    }
 }
 
 void MacDonald::sellName(string animalName,int numberOrder)
 {
 
 }
-
 
 void MacDonald::feedAll()
 {
@@ -82,7 +79,10 @@ void MacDonald::feedAll()
 
 void MacDonald::feedType(int type)
 {
+    for (int i = 0; i < resource->animals.size(); i++)
+    {
 
+    }
 }
 
 void MacDonald::feedName(string animalName,int numberOrder)

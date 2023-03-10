@@ -6,9 +6,11 @@ Animals::Animals()
     weight = 0;
     happyindex = nullptr;
     price_sell = 0;
-    sound = "";
     //truyen thoi gian
     lifetime = 0;
+    isHeard = 0;
+    isGoOut = false;
+    isEat = false;
 }
 Animals::~Animals()
 {
@@ -31,10 +33,7 @@ void Animals::setHappyIndex(int hpi)
 {
     happyindex = new int(hpi);
 }
-void Animals::setSound(string sound)
-{
-   this->sound = sound;
-}
+
 void Animals::setWeight(float weight)
 {
    this->weight = weight;
@@ -46,10 +45,6 @@ int Animals::getAge()
 float Animals::getWeight()
 {
     return weight;
-}
-string Animals::getSound()
-{
-    return sound;
 }
 int *Animals::getHappyIndex()
 {
@@ -72,3 +67,30 @@ void Animals::setType(int type)
 {
     this->type = type;
 }
+int Animals::getIsHeard()
+{
+    return isHeard;
+}
+void Animals::setIsHeard(int isHeard)
+{
+    this->isHeard = isHeard;
+}
+bool Animals::getIsGoOut()
+{
+    return isGoOut;
+}
+
+void Animals::setIsGoOut(bool isGoOut)
+{
+    this->isGoOut = isGoOut;
+}
+bool Animals::getIsEat()
+{
+    return isEat;
+}
+
+void Animals::setIsEat(bool isEat)
+{
+    this->isEat = isEat;
+}
+

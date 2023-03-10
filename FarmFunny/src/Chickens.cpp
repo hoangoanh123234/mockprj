@@ -4,7 +4,6 @@
 Chickens::Chickens()
 {
     Animals::setHappyIndex(HAPPYINDEX_DEFAULT);
-    Animals::setSound("Bawk!");
 }
 
 Chickens::~Chickens()
@@ -37,11 +36,6 @@ bool Chickens::sell()
 }
 
 void Chickens::eat()
-{
-
-}
-
-void Chickens::go_out()
 {
 
 }
