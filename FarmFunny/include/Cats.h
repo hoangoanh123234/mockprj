@@ -14,10 +14,11 @@ class Cats:public Animals
         bool fullWeight();
         int isReproduce();
         bool sell();
+        bool isLifeTime();
         void eat();
-        void go_out();
         void die();
-        bool isEat();
+        void weigh();
+    protected:
 
     protected:
 

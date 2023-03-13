@@ -41,6 +41,7 @@
 		<Unit filename="include/MacDonald.h" />
 		<Unit filename="include/Pigs.h" />
 		<Unit filename="include/ResourceManager.h" />
+		<Unit filename="include/Shop.h" />
 		<Unit filename="include/StringUtility.h" />
 		<Unit filename="include/TimeManager.h" />
 		<Unit filename="main.cpp" />
@@ -51,6 +52,7 @@
 		<Unit filename="src/MacDonald.cpp" />
 		<Unit filename="src/Pigs.cpp" />
 		<Unit filename="src/ResourceManager.cpp" />
+		<Unit filename="src/Shop.cpp" />
 		<Unit filename="src/StringUtility.cpp" />
 		<Unit filename="src/TimeManager.cpp" />
 		<Extensions />

@@ -13,6 +13,7 @@ class Animals
         Animals();
         virtual ~Animals();
         void input();
+        void output();
         string getName();
         void setName(string name);
         int getAge();

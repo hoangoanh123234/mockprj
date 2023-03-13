@@ -10,6 +10,11 @@ ResourceManager::~ResourceManager()
 {
     //dtor
 }
+void ResourceManager::output()
+{
+    cout << "Money: " << this->money << endl;
+    cout << "Food: " << this->food << endl;
+}
 int ResourceManager::getFood()
 {
     return food;
@@ -17,7 +22,8 @@ int ResourceManager::getFood()
 
 void ResourceManager::setFood(int food)
 {
-    this->food = food;
+    if (food < 0) cout << "Out of food!";
+    else this->food = food;
 }
 
 int ResourceManager::getMoney()
@@ -27,7 +33,8 @@ int ResourceManager::getMoney()
 
 void ResourceManager::setMoney(int money)
 {
-    this->money = money;
+    if (money < 0) cout << "Out of money!";
+    else this->money = money;
 }
 bool ResourceManager::checkName(string animalName)
 {
@@ -234,9 +241,9 @@ bool ResourceManager::fullFood()
     {
         if(!animals[i]->getIsEat())
             if(animals[i]->getType()==1) unit = unit + 1;
-            else if(animals[i]->getType()==2 ) unit = unit + 2;
+            else if(animals[i]->getType()==2 && animals[i]->getAge()>=2) unit = unit + 2;
             else if(animals[i]->getType()==3 && animals[i]->getAge()>=3) unit = unit + 3;
-            else if(animals[i]->getType()==4 && animals[i]->getAge()>=2) unit = unit + 4;
+            else if(animals[i]->getType()==4 && animals[i]->getAge()>=2) unit = unit + 7;
     }
     return unit<=food;
 }

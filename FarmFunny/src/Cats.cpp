@@ -3,6 +3,7 @@
 Cats::Cats()
 {
     Animals::setHappyIndex(HAPPYINDEX_DEFAULT);
+    Animals::setType(Animals::TYPE_CAT);
 }
 
 Cats::~Cats()
@@ -17,7 +18,18 @@ bool Cats::fullWeight()
 {
     return (Cats::getWeight() == 4);
 }
+
+int Cats::isReproduce()
+{
+    return 1;
+}
+
 bool Cats::sell()
+{
+
+}
+
+bool Cats::isLifeTime()
 {
 
 }
@@ -32,12 +44,7 @@ void Cats::die()
 
 }
 
-bool Cats::isEat()
+void Cats::weigh()
 {
 
 }
-int Cats::isReproduce()
-{
-    return 1;
-}
-

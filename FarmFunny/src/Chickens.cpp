@@ -4,6 +4,7 @@
 Chickens::Chickens()
 {
     Animals::setHappyIndex(HAPPYINDEX_DEFAULT);
+    Animals::setType(Animals::TYPE_CHICKEN);
 }
 
 Chickens::~Chickens()
@@ -30,6 +31,7 @@ int Chickens::isReproduce()
 {
     return StringUtility::random(1,3);
 }
+
 bool Chickens::sell()
 {
 
@@ -41,11 +43,6 @@ void Chickens::eat()
 }
 
 void Chickens::die()
-{
-
-}
-
-bool Chickens::isEat()
 {
 
 }

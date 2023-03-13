@@ -3,7 +3,9 @@
 Dogs::Dogs()
 {
     smartIndex = 0;
+    isTrained = false;
     Animals::setHappyIndex(HAPPYINDEX_DEFAULT);
+    Animals::setType(Animals::TYPE_DOG);
 }
 
 Dogs::~Dogs()
@@ -30,7 +32,23 @@ int Dogs::isReproduce()
 {
     return 1;
 }
+
+bool Dogs::getIsTrained()
+{
+    return isTrained;
+}
+
+void Dogs::setIsTrained(bool isTrained)
+{
+    this->isTrained = isTrained;
+}
+
 bool Dogs::sell()
+{
+
+}
+
+bool Dogs::isLifeTime()
 {
 
 }
@@ -45,7 +63,7 @@ void Dogs::die()
 
 }
 
-bool Dogs::isEat()
+void Dogs::weigh()
 {
 
 }

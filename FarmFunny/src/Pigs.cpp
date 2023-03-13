@@ -2,7 +2,7 @@
 
 Pigs::Pigs()
 {
-
+    Animals::setType(Animals::TYPE_PIG);
 }
 
 Pigs::~Pigs()
@@ -22,7 +22,13 @@ int Pigs::isReproduce()
     return StringUtility::random(1,2);
 
 }
+
 bool Pigs::sell()
+{
+
+}
+
+bool Pigs::isLifeTime()
 {
 
 }
@@ -37,7 +43,7 @@ void Pigs::die()
 
 }
 
-bool Pigs::isEat()
+void Pigs::weigh()
 {
 
 }

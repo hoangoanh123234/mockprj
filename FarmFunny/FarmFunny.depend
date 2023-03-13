@@ -172,56 +172,56 @@
 
 1678072816 c:\users\oanh2.nguyen\desktop\new folder\mockprj\farmfunny\include\timemanager.h
 
-1678182424 source:d:\private\mockprj\farmfunny\main.cpp
+1678678751 source:d:\private\mockprj\farmfunny\main.cpp
 	<iostream>
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 	"StringUtility.h"
 
-1678182404 d:\private\mockprj\farmfunny\include\stringutility.h
+1678676498 d:\private\mockprj\farmfunny\include\stringutility.h
 	<iostream>
 
-1678438954 source:d:\private\mockprj\farmfunny\src\animals.cpp
+1678681763 source:d:\private\mockprj\farmfunny\src\animals.cpp
 	"Animals.h"
 
-1678438954 d:\private\mockprj\farmfunny\include\animals.h
+1678680093 d:\private\mockprj\farmfunny\include\animals.h
 	<iostream>
 
-1678436570 source:d:\private\mockprj\farmfunny\src\cats.cpp
+1678692630 source:d:\private\mockprj\farmfunny\src\cats.cpp
 	"Cats.h"
 
-1678351629 d:\private\mockprj\farmfunny\include\cats.h
+1678675111 d:\private\mockprj\farmfunny\include\cats.h
 	"Animals.h"
 	<iostream>
 
-1678436570 source:d:\private\mockprj\farmfunny\src\chickens.cpp
+1678692630 source:d:\private\mockprj\farmfunny\src\chickens.cpp
 	"Chickens.h"
 
-1678351629 d:\private\mockprj\farmfunny\include\chickens.h
+1678675135 d:\private\mockprj\farmfunny\include\chickens.h
 	<iostream>
 	"Animals.h"
 	"StringUtility.h"
 
-1678436570 source:d:\private\mockprj\farmfunny\src\dogs.cpp
+1678692630 source:d:\private\mockprj\farmfunny\src\dogs.cpp
 	"Dogs.h"
 
-1678351629 d:\private\mockprj\farmfunny\include\dogs.h
+1678675111 d:\private\mockprj\farmfunny\include\dogs.h
 	"Animals.h"
 	<iostream>
 
-1678438744 source:d:\private\mockprj\farmfunny\src\macdonald.cpp
+1678690789 source:d:\private\mockprj\farmfunny\src\macdonald.cpp
 	"MacDonald.h"
 	<string.h>
 	<cstring>
 
-1678335162 d:\private\mockprj\farmfunny\include\macdonald.h
+1678677137 d:\private\mockprj\farmfunny\include\macdonald.h
 	<iostream>
 	<vector>
 	"ResourceManager.h"
 	"StringUtility.h"
 
-1678444871 d:\private\mockprj\farmfunny\include\resourcemanager.h
+1678681763 d:\private\mockprj\farmfunny\include\resourcemanager.h
 	<iostream>
 	<vector>
 	"Animals.h"
@@ -230,22 +230,27 @@
 	"Dogs.h"
 	"Pigs.h"
 
-1678436570 source:d:\private\mockprj\farmfunny\src\pigs.cpp
+1678692630 source:d:\private\mockprj\farmfunny\src\pigs.cpp
 	"Pigs.h"
 
-1678351629 d:\private\mockprj\farmfunny\include\pigs.h
+1678675111 d:\private\mockprj\farmfunny\include\pigs.h
 	"Animals.h"
 	"StringUtility.h"
 	<iostream>
 
-1678444826 source:d:\private\mockprj\farmfunny\src\resourcemanager.cpp
+1678699796 source:d:\private\mockprj\farmfunny\src\resourcemanager.cpp
 	"ResourceManager.h"
 
-1678246493 source:d:\private\mockprj\farmfunny\src\stringutility.cpp
+1678676541 source:d:\private\mockprj\farmfunny\src\stringutility.cpp
 	"StringUtility.h"
 
 1678072816 source:d:\private\mockprj\farmfunny\src\timemanager.cpp
 	"TimeManager.h"
 
 1678072816 d:\private\mockprj\farmfunny\include\timemanager.h
+
+1678693291 source:d:\private\mockprj\farmfunny\src\shop.cpp
+	"Shop.h"
+
+1678693291 d:\private\mockprj\farmfunny\include\shop.h
 

@@ -19,9 +19,8 @@ class Chickens: public Animals {
 
         bool sell();
         void eat();
-        void go_out();
         void die();
-        bool isEat();
+    protected:
     protected:
 
     private:

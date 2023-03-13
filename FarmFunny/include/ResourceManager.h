@@ -14,7 +14,7 @@ class ResourceManager
         vector<Animals*> animals;
         ResourceManager();
         virtual ~ResourceManager();
-
+        void output();
         int getFood ();
         void setFood (int food);
         int getMoney ();
@@ -39,6 +39,8 @@ class ResourceManager
     private:
         int food;
         int money;
+        const float MIN_MONEY = 0;
+        const float MIN_FOOD = 0;
 };
 
 #endif // RESOURCEMANAGER_H

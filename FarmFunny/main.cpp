@@ -12,4 +12,5 @@ int main(){
         r = StringUtility::random(1,2);
         printf("%d ",r);
     }
+    cout << endl << StringUtility::splitMiddle("World War 1"," ");
 }

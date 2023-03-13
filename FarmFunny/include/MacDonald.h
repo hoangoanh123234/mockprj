@@ -12,8 +12,8 @@ class MacDonald
         MacDonald();
         virtual ~MacDonald();
         void feed(string command);
-        void letAnimalOut();
-        void letAnimalBack();
+        void letOut(string command);
+        void letBack(string command);
         void buyAnimal(string command);
         void sellAnimal(string command);
         void buyFood();
@@ -26,9 +26,15 @@ class MacDonald
     private:
         void feedAll();
         void feedType(int type);
-        void feedName(string animalName,int orderNumber);
+        void feedName(int orderNumber);
         void sellType(int type);
-        void sellName(string animalName, int orderNumber);
+        void sellName(int orderNumber);
+        void letAllOut();
+        void letTypeOut(int type);
+        void letNameOut(int orderNumber);
+        void letAllBack();
+        void letTypeBack(int type);
+        void letNameBack(int orderNumber);
 
 };
 

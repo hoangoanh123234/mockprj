@@ -21,6 +21,10 @@ void Animals::input()
     cout << "Name: ";
     getline(cin,name);
 }
+void Animals::output()
+{
+    cout << "Name: " <<this->name;
+}
 string Animals::getName()
 {
     return name;

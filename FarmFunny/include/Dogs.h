@@ -13,17 +13,21 @@ class Dogs:public Animals
         int getSmartIndex();
         void setSmartIndex(int smartIndex);
         void setWeight(float weight1);
+        bool getIsTrained();
+        void setIsTrained(bool isTrained);
+
         bool fullWeight();
         int isReproduce();
         bool sell();
+        bool isLifeTime();
         void eat();
-        void go_out();
         void die();
-        bool isEat();
+        void weigh();
     protected:
 
     private:
         int smartIndex;
+        bool isTrained;
         const int HAPPYINDEX_DEFAULT = 7;
         const float MAX_WEIGHT = 7;
 };
