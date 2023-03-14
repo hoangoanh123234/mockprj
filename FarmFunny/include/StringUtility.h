@@ -10,6 +10,7 @@ class StringUtility
         static string split(string str, string delimiter);
         static string splitMiddle(string str, string delimiter);
         static int random(int minN, int maxN);
+        static string format(string str);
         /*static int a = 0;
         int b = 0;*/
     protected:

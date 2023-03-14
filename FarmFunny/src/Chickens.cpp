@@ -19,6 +19,11 @@ void Chickens::setWeight(float weight1)
 {
     Animals::setWeight(min(MAX_WEIGHT,weight1));
 }
+void Chickens::setHappyIndex(int hpi)
+{
+    if (hpi > 0) Animals::setHappyIndex(min(MAX_HAPPYINDEX,hpi));
+    else Animals::setHappyIndex(max(HAPPYINDEX_DEFAULT,hpi));
+}
 bool Chickens::fullWeight()
 {
     return (Chickens::getWeight() == 2);

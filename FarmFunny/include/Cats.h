@@ -11,6 +11,7 @@ class Cats:public Animals
         Cats();
         virtual ~Cats();
         void setWeight(float weight1);
+        void setHappyIndex(int hpi);
         bool fullWeight();
         int isReproduce();
         bool sell();
@@ -25,6 +26,7 @@ class Cats:public Animals
     private:
         const int HAPPYINDEX_DEFAULT = 7;
         const float MAX_WEIGHT = 4;
+        const int MAX_HAPPYINDEX = 10;
 };
 
 #endif // CATS_H

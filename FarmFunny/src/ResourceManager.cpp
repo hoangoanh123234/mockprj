@@ -131,7 +131,7 @@ vector<Animals*> ResourceManager::reproducePig(int index) //sai luong, class res
 void ResourceManager::chickenSound (int quantity)
 {
     for (int i = 1; i <= quantity; i++) cout << "Bawk!";
-    for (int i = 0; i <= animals.size(); i++)
+    for (int i = 0; i < animals.size(); i++)
     {
         if (animals[i]->getType() == 2)
         {
@@ -151,7 +151,7 @@ void ResourceManager::chickenSound (int quantity)
 void ResourceManager::catSound (int quantity)
 {
     for (int i = 1; i <= quantity; i++) cout << "Meow!";
-    for (int i = 0; i <= animals.size(); i++)
+    for (int i = 0; i < animals.size(); i++)
     {
         if (animals[i]->getType() == 1)
         {
@@ -184,7 +184,7 @@ void ResourceManager::catSound (int quantity)
 void ResourceManager::dogSound (int quantity)
 {
     for (int i = 1; i <= quantity; i++) cout << "Woof!";
-    for (int i = 0; i <= animals.size(); i++)
+    for (int i = 0; i < animals.size(); i++)
     {
         if (animals[i]->getType() == 1)
         {
@@ -217,7 +217,7 @@ void ResourceManager::dogSound (int quantity)
 void ResourceManager::pigSound (int quantity)
 {
     for (int i = 1; i <= quantity; i++) cout << "Oink!";
-    for (int i = 0; i <= animals.size(); i++)
+    for (int i = 0; i < animals.size(); i++)
     {
         if (animals[i]->getType() == 1)
         {

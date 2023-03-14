@@ -10,9 +10,9 @@ class Dogs:public Animals
 
         Dogs();
         virtual ~Dogs();
-        int getSmartIndex();
-        void setSmartIndex(int smartIndex);
         void setWeight(float weight1);
+        void setHappyIndex(int hpi);
+        void setSmartIndex(int smi);
         bool getIsTrained();
         void setIsTrained(bool isTrained);
 
@@ -26,10 +26,12 @@ class Dogs:public Animals
     protected:
 
     private:
-        int smartIndex;
         bool isTrained;
+        const int SMARTINDEX_DEFAULT = 0;
+        const int MAX_SMARTINDEX = 10;
         const int HAPPYINDEX_DEFAULT = 7;
         const float MAX_WEIGHT = 7;
+        const int MAX_HAPPYINDEX = 10;
 };
 
 #endif // DOGS_H

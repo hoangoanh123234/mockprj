@@ -25,12 +25,16 @@ class Animals
         void setType(int type);
         int *getHappyIndex();
         void setHappyIndex(int hpi);
+        int *getSmartIndex();
+        void setSmartIndex(int smi);
         int getIsHeard();
         void setIsHeard(int isHeard);
         bool getIsGoOut();
         void setIsGoOut(bool isGoOut);
         bool getIsEat();
         void setIsEat(bool isEat);
+        bool getWentOut();
+        void setWentOut(bool wentOut);
 
         virtual bool sell() = 0;
         virtual bool isLifeTime() = 0;
@@ -47,11 +51,13 @@ class Animals
         int age;
         float weight;
         int *happyindex;
+        int *smartindex;
         int price_sell;
         int type; //cat type tu lenh buy
         int lifetime;
         int isHeard;
         bool isGoOut;
+        bool wentOut;
         bool isEat;
 };
 

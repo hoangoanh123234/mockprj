@@ -27,7 +27,7 @@ void MacDonald::feed(string command)
         MacDonald::feedName(i); //check xem ten con vat co trong danh sach ko, neu co moi cho an, khong thi thong bao
     }
 
-    else cout << cmd <<".There is no type or name of this animal!!!";
+    else cout << cmd <<" - There is no type or name of this animal!!!";
     //system ("pause");
 }
 
@@ -44,12 +44,17 @@ void MacDonald::sellAnimal(string command)
         int i = MacDonald::resource->checkName(cmd);
         MacDonald::sellName(i);  //check xem ten con vat co trong danh sach ko, neu co moi ban, khong thi thong bao
     }
-    else cout << "There is no type or name of this animal!!!";
+    else cout << " - There is no type or name of this animal!!!";
     //system ("pause");
 }
 void MacDonald::sellType(int type)
 {
-    if (type = 1)
+
+}
+
+void MacDonald::sellName(int numberOrder)
+{
+    /*if (type = 1)
     {
         resource->setMoney(resource->getMoney()+2);
     }
@@ -65,12 +70,7 @@ void MacDonald::sellType(int type)
     else
     {
         //resource->setMoney(resource->getMoney()+4);
-    }
-}
-
-void MacDonald::sellName(int numberOrder)
-{
-
+    }*/
 }
 
 void MacDonald::feedAll()
@@ -80,7 +80,6 @@ void MacDonald::feedAll()
         for (int i = 0; i < resource->animals.size(); i++)
         {
             MacDonald::feedName(i);
-            resource->
         }
     }
     else cout << "Not enough food!";
@@ -90,24 +89,26 @@ void MacDonald::feedType(int type)
 {
     for (int i = 0; i < resource->animals.size(); i++)
     {
-
+        if (resource->animals[i]->getType()==type)
+            MacDonald::feedName(i);
     }
 }
 
 void MacDonald::feedName(int numberOrder)
 {
+    int* b = resource->animals[numberOrder]->getHappyIndex();
     if(!resource->animals[numberOrder]->getIsEat())
-        if(resource->animals[numberOrder]->getType()==1 && resource->getFood() > 1)
+        if(resource->animals[numberOrder]->getType()==1 && resource->getFood() > 1 && *b >= 3)
         {
             resource->setFood(resource->getFood()-1);
             resource->chickenSound();
         }
-        else if(resource->animals[numberOrder]->getType()==2 && resource->animals[numberOrder]->getAge()>=2 && resource->getFood() > 2)
+        else if(resource->animals[numberOrder]->getType()==2 && resource->animals[numberOrder]->getAge()>=2 && resource->getFood() > 2 && *b >= 3)
         {
             resource->setFood(resource->getFood()-2);
             resource->catSound();
         }
-        else if(resource->animals[numberOrder]->getType()==3 && resource->animals[numberOrder]->getAge()>=3 && resource->getFood() > 3)
+        else if(resource->animals[numberOrder]->getType()==3 && resource->animals[numberOrder]->getAge()>=3 && resource->getFood() > 3 && *b >= 3)
         {
             resource->setFood(resource->getFood()-3);
             resource->dogSound();
@@ -133,7 +134,7 @@ void MacDonald::letOut(string command)
         MacDonald::letNameOut(i); //check xem ten con vat co trong danh sach ko, neu co moi cho an, khong thi thong bao
     }
 
-    else cout << cmd <<".There is no type or name of this animal!!!";
+    else cout << cmd <<" - There is no type or name of this animal!!!";
     //system ("pause");
 }
 void MacDonald::letAllOut()

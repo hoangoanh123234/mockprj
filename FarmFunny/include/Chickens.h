@@ -12,6 +12,7 @@ class Chickens: public Animals {
         Chickens();
         virtual ~Chickens();
         void setWeight(float weight1);
+        void setHappyIndex(int hpi);
         void weigh();
         bool fullWeight();
         bool isLifeTime();
@@ -26,6 +27,7 @@ class Chickens: public Animals {
     private:
         const int HAPPYINDEX_DEFAULT = 7;
         const float MAX_WEIGHT = 2;
+        const int MAX_HAPPYINDEX = 10;
 };
 
 #endif // CHICKENS_H

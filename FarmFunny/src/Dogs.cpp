@@ -2,27 +2,28 @@
 
 Dogs::Dogs()
 {
-    smartIndex = 0;
     isTrained = false;
     Animals::setHappyIndex(HAPPYINDEX_DEFAULT);
     Animals::setType(Animals::TYPE_DOG);
+    Animals::setSmartIndex(SMARTINDEX_DEFAULT);
 }
 
 Dogs::~Dogs()
 {
     //dtor
 }
-int Dogs::getSmartIndex()
-{
-    return smartIndex;
-}
-void Dogs::setSmartIndex(int smartIndex)
-{
-    this->smartIndex = smartIndex;
-}
 void Dogs::setWeight(float weight1)
 {
    Animals::setWeight(min(MAX_WEIGHT,weight1));
+}
+void Dogs::setHappyIndex(int hpi)
+{
+    if (hpi > 0) Animals::setHappyIndex(min(MAX_HAPPYINDEX,hpi));
+    else Animals::setHappyIndex(max(HAPPYINDEX_DEFAULT,hpi));
+}
+void Dogs::setSmartIndex(int smi)
+{
+   Animals::setSmartIndex(min(MAX_SMARTINDEX,smi));
 }
 bool Dogs::fullWeight()
 {

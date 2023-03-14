@@ -12,7 +12,12 @@ Cats::~Cats()
 }
 void Cats::setWeight(float weight1)
 {
-   Animals::setWeight(min(MAX_WEIGHT,weight1));
+    Animals::setWeight(min(MAX_WEIGHT,weight1));
+}
+void Cats::setHappyIndex(int hpi)
+{
+    if (hpi > 0) Animals::setHappyIndex(min(MAX_HAPPYINDEX,hpi));
+    else Animals::setHappyIndex(max(HAPPYINDEX_DEFAULT,hpi));
 }
 bool Cats::fullWeight()
 {

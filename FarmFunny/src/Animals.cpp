@@ -33,9 +33,22 @@ void Animals::setName(string name)
 {
    this->name = name;
 }
+int *Animals::getHappyIndex()
+{
+    return happyindex;
+}
+
 void Animals::setHappyIndex(int hpi)
 {
     happyindex = new int(hpi);
+}
+int *Animals::getSmartIndex()
+{
+    return smartindex;
+}
+void Animals::setSmartIndex(int smi)
+{
+    smartindex = new int(smi);
 }
 
 void Animals::setWeight(float weight)
@@ -50,10 +63,7 @@ float Animals::getWeight()
 {
     return weight;
 }
-int *Animals::getHappyIndex()
-{
-    return happyindex;
-}
+
 int Animals::getLifeTime()
 {
     return lifetime;
@@ -66,7 +76,6 @@ int Animals::getType()
 {
     return type;
 }
-
 void Animals::setType(int type)
 {
     this->type = type;
@@ -83,7 +92,6 @@ bool Animals::getIsGoOut()
 {
     return isGoOut;
 }
-
 void Animals::setIsGoOut(bool isGoOut)
 {
     this->isGoOut = isGoOut;
@@ -92,9 +100,17 @@ bool Animals::getIsEat()
 {
     return isEat;
 }
-
 void Animals::setIsEat(bool isEat)
 {
     this->isEat = isEat;
+}
+bool Animals::getWentOut()
+{
+    return wentOut;
+}
+
+void Animals::setWentOut(bool wentOut)
+{
+    this->wentOut =  wentOut;
 }
 

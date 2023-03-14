@@ -45,3 +45,7 @@ string StringUtility::splitMiddle(string str, string delimiter)
     }
     return token;
 }
+string StringUtility::format(string str)
+{
+
+}
